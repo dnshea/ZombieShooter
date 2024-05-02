@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float sensitivity;
     public Transform cam;
     public float HP;
+    public Transform gun;
 
     private Rigidbody rb;
     private float xRot;
@@ -31,6 +32,7 @@ public class PlayerController : MonoBehaviour
 
         MovePlayer();
         MoveCamera();
+        Shoot();
     }
 
     /// <summary>
@@ -44,7 +46,7 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector3(moveVector.x, rb.velocity.y, moveVector.z);
         //transform.Rotate(cam.rotation.x, 0f , 0f);
 
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && OnGround())
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
@@ -56,6 +58,24 @@ public class PlayerController : MonoBehaviour
 
         transform.Rotate(0f, playerMouseInput.x * sensitivity, 0f);
         cam.transform.localRotation = Quaternion.Euler(xRot, 0f, 0f);
+    }
+
+    public void Shoot()
+    {
+        if(Input.GetKey(KeyCode.Mouse0))
+        {
+            RaycastHit hit;
+            bool hitZombie;
+            Debug.DrawRay(cam.transform.position, cam.transform.forward, Color.red);
+            if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 300f))
+            {
+                if(hit.collider.tag == "Zombie")
+                {
+                    Destroy(hit.collider.gameObject);
+                }
+                    
+            }
+        }
     }
 
     public void GameOver()
@@ -73,6 +93,19 @@ public class PlayerController : MonoBehaviour
             HP += other.gameObject.GetComponent<HealthPack>().healthRestored;
             Destroy(other.gameObject);
         }
+    }
+
+    private bool OnGround()
+    {
+        bool hitGround = false;
+        RaycastHit hit;
+
+        if(Physics.Raycast(transform.position, Vector3.down, out hit, 1.5f))
+        {
+            hitGround = true;
+        }
+
+        return hitGround;
     }
 
 }
