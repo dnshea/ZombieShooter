@@ -11,10 +11,19 @@ public class Spawner : MonoBehaviour
     public GameObject Meteor;
     public GameObject Bomber;
     public GameObject Boss;
+    private int enemyCount;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+     if (levelOne)
+        {
+            WaveOne();
+        }
+     else
+        {
+            WaveFour();
+        }
     }
 
     // Update is called once per frame
@@ -25,5 +34,37 @@ public class Spawner : MonoBehaviour
     private void SpawnEnemy(GameObject enemy)
     {
         Instantiate(enemy, transform.position, transform.rotation);
+        enemyCount++;
     }
+    private void SpawnEnemyAir(GameObject enemy)
+    {
+        Instantiate(enemy, transform.position, transform.rotation);
+        enemyCount++;
+    }
+
+    private void WaveOne()
+    {
+        SpawnEnemy(Zombie);
+    }
+    private void WaveTwo()
+    {
+
+    }
+    private void WaveThree()
+    {
+
+    }
+    private void WaveFour()
+    {
+
+    }
+    private void WaveFive()
+    {
+
+    }
+    private void WaveSix()
+    {
+
+    }
+
 }
