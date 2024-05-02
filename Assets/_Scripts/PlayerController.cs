@@ -8,9 +8,10 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float jumpForce;
     public float sensitivity;
+    public Transform cam;
 
     private Rigidbody rb;
-    private Transform cam;
+    private float xRot;
     private Vector3 playerMovementInput;
     private Vector2 playerMouseInput;
 
@@ -39,6 +40,7 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 moveVector = transform.TransformDirection(playerMovementInput) * speed * Time.deltaTime;
         rb.velocity = new Vector3(moveVector.x, rb.velocity.y, moveVector.z);
+        //transform.Rotate(cam.rotation.x, 0f , 0f);
 
         if(Input.GetKeyDown(KeyCode.Space))
         {
@@ -48,7 +50,10 @@ public class PlayerController : MonoBehaviour
 
     public void MoveCamera()
     {
+        xRot -= playerMouseInput.y * sensitivity;
 
+        transform.Rotate(0f, playerMouseInput.x * sensitivity, 0f);
+        cam.transform.localRotation = Quaternion.Euler(xRot, 0f, 0f);
     }
 
 }
