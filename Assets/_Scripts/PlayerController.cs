@@ -13,12 +13,14 @@ public class PlayerController : MonoBehaviour
     public float HP;
     public Transform gun;
     public GameObject bulletPrefab;
+    public float gunDamage;
+    public float score = 0;
 
     private Rigidbody rb;
     private float xRot;
     private Vector3 playerMovementInput;
     private Vector2 playerMouseInput;
-    private float score = 0;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -97,6 +99,20 @@ public class PlayerController : MonoBehaviour
         {
             HP += other.gameObject.GetComponent<HealthPack>().healthRestored;
             Destroy(other.gameObject);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.GetComponent<Zombie>())
+        {
+            HP -= 20;
+            score -= 50;
+        }
+        else if (collision.gameObject.GetComponent<Flying>())
+        {
+            HP -= 20;
+            score -= 100;
         }
     }
 
