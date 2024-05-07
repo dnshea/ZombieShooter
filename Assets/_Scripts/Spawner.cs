@@ -8,7 +8,6 @@ public class Spawner : MonoBehaviour
     public GameObject Zombie;
     public GameObject Flying;
     public GameObject Range;
-    public GameObject Meteor;
     public GameObject Bomber;
     public GameObject Boss;
     private int enemyCount;
