@@ -18,6 +18,11 @@ public class Zombie : MonoBehaviour
         Vector3 lookPosition = new Vector3(player.transform.position.x, transform.position.y, player.transform.position.z);
         transform.LookAt(lookPosition);
         rb.AddForce(speed * 20 * Time.deltaTime * transform.forward);
+        if (hp <= 0)
+        {
+            player.GetComponent<PlayerController>().score += 50;
+            Destroy(this.gameObject);
+        }
     }
    
 }

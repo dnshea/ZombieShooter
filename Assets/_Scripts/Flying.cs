@@ -11,5 +11,10 @@ public class Flying : MonoBehaviour
     {
             transform.LookAt(player.transform);
             transform.position += transform.forward * speed * Time.deltaTime;
+        if (hp <= 0)
+        {
+            player.GetComponent<PlayerController>().score += 75;
+            Destroy(this.gameObject);
+        }
     }
 }
