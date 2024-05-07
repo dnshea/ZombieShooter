@@ -385,5 +385,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerController: {fileID: 0}
-  Lives: {fileID: 0}
-  Score: {fileID: 0}
+  Lives: {fileID: 2716786253412948976}
+  Score: {fileID: 4089712672452581395}
