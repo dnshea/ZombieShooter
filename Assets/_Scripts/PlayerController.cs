@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public Transform cam;
     public float HP;
     public Transform gun;
+    public GameObject bulletPrefab;
 
     private Rigidbody rb;
     private float xRot;
@@ -62,10 +63,12 @@ public class PlayerController : MonoBehaviour
 
     public void Shoot()
     {
-        if(Input.GetKey(KeyCode.Mouse0))
+        if(Input.GetKeyDown(KeyCode.Mouse0))
         {
+            GameObject newBullet = Instantiate(bulletPrefab, gun.transform.position, gun.transform.rotation);
+
             RaycastHit hit;
-            bool hitZombie;
+
             Debug.DrawRay(cam.transform.position, cam.transform.forward, Color.red);
             if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 300f))
             {
