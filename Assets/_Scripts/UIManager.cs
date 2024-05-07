@@ -9,7 +9,7 @@ using TMPro;
  * 5/2/24
  * Focuses on UI manager and everything related towards it.
  */
-/*
+
 public class UIManager : MonoBehaviour
 {
 
@@ -22,7 +22,6 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         Lives.text = "HP: " + PlayerController.HP;
-        Score.text = "Score: " + PlayerController.Score;
+        Score.text = "Score: " + PlayerController.score;
     }
 }
-*/
