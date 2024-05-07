@@ -10,16 +10,16 @@ public class Bullet : MonoBehaviour
     private Transform cam;
     private Vector3 forward;
 
-    private void Start()
+    private void Awake()
     {
         StartCoroutine(DespawnTimer(despawnTime));
-        cam = GameObject.Find("Main Camera").transform;
+        cam = Camera.main.transform;
         forward = cam.transform.forward;
     }
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(forward * speed * Time.deltaTime);
+        transform.Translate(forward * speed * Time.deltaTime, Space.World);
     }
 
     private IEnumerator DespawnTimer(float time)

@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     private float xRot;
     private Vector3 playerMovementInput;
     private Vector2 playerMouseInput;
+    private float score = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -65,7 +66,7 @@ public class PlayerController : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Mouse0))
         {
-            GameObject newBullet = Instantiate(bulletPrefab, gun.transform.position, gun.transform.rotation);
+            GameObject newBullet = Instantiate(bulletPrefab, gun.transform.position, Quaternion.Euler(gun.transform.rotation.x + 90, gun.transform.rotation.y, gun.transform.rotation.z + 90));
 
             RaycastHit hit;
 
@@ -75,6 +76,7 @@ public class PlayerController : MonoBehaviour
                 if(hit.collider.tag == "Zombie")
                 {
                     Destroy(hit.collider.gameObject);
+                    score += 10;
                 }
                     
             }
