@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     public float HP;
     public Transform gun;
     public GameObject bulletPrefab;
-    public float gunDamage;
+    public int gunDamage;
     public float score = 0;
 
     private Rigidbody rb;
@@ -75,12 +75,17 @@ public class PlayerController : MonoBehaviour
             Debug.DrawRay(cam.transform.position, cam.transform.forward, Color.red);
             if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 300f))
             {
-                if(hit.collider.tag == "Zombie")
+                if(hit.collider.gameObject.GetComponent<Zombie>())
                 {
-                    Destroy(hit.collider.gameObject);
+                    hit.collider.gameObject.GetComponent<Zombie>().hp -= gunDamage;
                     score += 10;
                 }
-                    
+                if (hit.collider.gameObject.GetComponent<Flying>())
+                {
+                    hit.collider.gameObject.GetComponent<Flying>().hp -= gunDamage;
+                    score += 20;
+                }
+
             }
         }
     }
@@ -90,6 +95,14 @@ public class PlayerController : MonoBehaviour
         if(HP <= 0)
         {
             SceneManager.LoadScene(1);
+        }
+    }
+
+    public void PauseMenu()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(2);
         }
     }
 
