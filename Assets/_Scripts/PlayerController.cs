@@ -98,6 +98,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void PauseMenu()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(2);
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.GetComponent<HealthPack>())

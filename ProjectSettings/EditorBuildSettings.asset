@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NiloWorkScene.unity
     guid: c7dcf7899ec90fe4aa329a29c70302bc
+  - enabled: 1
+    path: Assets/Scenes/UI_MENUS/Pause.unity
+    guid: 536cbf219c76f3c4ab1fa8dd6c37fa2d
   m_configObjects: {}
