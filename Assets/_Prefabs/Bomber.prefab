@@ -46,9 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58ee0252357f52544a0f7cbac3219e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 20
   hp: 100
-  player: {fileID: 0}
   bomber: 1
 --- !u!1 &5049682595950202775
 GameObject:

@@ -26,11 +26,12 @@ public class LaserBall : MonoBehaviour
         {
             transform.Translate(Vector3.up * speed * Time.deltaTime);
         }
-
+        
     }
     private IEnumerator Uptime(float time)
     {
         yield return new WaitForSeconds(time);
         follow = true;
     }
+    
 }

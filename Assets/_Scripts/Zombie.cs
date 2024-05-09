@@ -7,12 +7,16 @@ public class Zombie : MonoBehaviour
 {
     public int speed;
     public int hp;
-    public GameObject player;
     Rigidbody rb;
     public bool bomber;
+
+    private GameObject player;
+    private GameObject spawner;
     private void Start()
     {
             rb = GetComponent<Rigidbody>();
+            player = FindObjectOfType<PlayerController>().gameObject;
+            spawner = FindObjectOfType<Spawner>().gameObject;
     }
     void Update()
     {
@@ -22,6 +26,7 @@ public class Zombie : MonoBehaviour
         if (hp <= 0)
         {
             player.GetComponent<PlayerController>().score += 50;
+            spawner.GetComponent<Spawner>().enemyCount--;
             Destroy(this.gameObject);
         }
     }

@@ -10,7 +10,20 @@ public class Spawner : MonoBehaviour
     public GameObject Range;
     public GameObject Bomber;
     public GameObject Boss;
-    private int enemyCount;
+    public GameObject Health;
+
+    public Transform spawnOne;
+    public Transform spawnTwo;
+    public Transform spawnThree;
+    public Transform spawnFour;
+    public Transform spawnFive;
+    public Transform spawnAir1;
+    public Transform spawnAir2;
+    public Transform spawnAir3;
+    public Transform spawnAir4;
+    public Transform spawnAir5;
+
+    public int enemyCount;
 
     // Start is called before the first frame update
     void Start()
@@ -54,14 +67,6 @@ public class Spawner : MonoBehaviour
 
     }
     private void WaveFour()
-    {
-
-    }
-    private void WaveFive()
-    {
-
-    }
-    private void WaveSix()
     {
 
     }
