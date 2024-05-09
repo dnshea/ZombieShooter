@@ -8,6 +8,7 @@ public class Mortar : MonoBehaviour
     public float spawnRate;
     public int hp;
     public GameObject player;
+    public Transform mortarBase;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,7 @@ public class Mortar : MonoBehaviour
     }
     private void SpawnLaserBall()
     {
-        GameObject newLaser = Instantiate(laserballPrefab, transform.position, transform.rotation);
+        GameObject newLaser = Instantiate(laserballPrefab, mortarBase.transform.position, mortarBase.transform.rotation);
     }
         private void Update()
     {
