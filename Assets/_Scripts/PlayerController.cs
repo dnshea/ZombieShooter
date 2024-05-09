@@ -85,6 +85,16 @@ public class PlayerController : MonoBehaviour
                     hit.collider.gameObject.GetComponent<Flying>().hp -= gunDamage;
                     score += 20;
                 }
+                if(hit.collider.gameObject.GetComponent<LaserBall>())
+                {
+                    score += 5;
+                    Destroy(hit.collider.gameObject);
+                }
+                if (hit.collider.gameObject.GetComponent<Mortar>())
+                {
+                    score += 12;
+                    hit.collider.gameObject.GetComponent<Mortar>().hp -= gunDamage;
+                }
 
             }
         }
@@ -119,6 +129,11 @@ public class PlayerController : MonoBehaviour
         {
             HP -= 20;
             score -= 100;
+        }
+        if(collision.gameObject.GetComponent<LaserBall>())
+        {
+            HP -= 25;
+            Destroy(collision.gameObject);
         }
     }
 
