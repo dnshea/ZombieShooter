@@ -46,7 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
-  player: {fileID: 0}
+  hp: 100
+  player: {fileID: 3508727708151745227, guid: c4d2b2acce36e59468f70bedfdbb022e, type: 3}
 --- !u!1 &7246454112429409626
 GameObject:
   m_ObjectHideFlags: 0

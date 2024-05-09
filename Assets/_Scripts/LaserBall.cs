@@ -7,11 +7,12 @@ public class LaserBall : MonoBehaviour
     public int speed = 10;
     public float upTime = 3f;
     private bool follow = false;
-    public GameObject player;
+    private Transform player;
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(Uptime(upTime));
+        player = FindObjectOfType<PlayerController>().transform;
     }
 
     // Update is called once per frame
@@ -19,7 +20,7 @@ public class LaserBall : MonoBehaviour
     {
         if (follow)
         {
-            transform.LookAt(player.transform);
+            transform.LookAt(player.transform.position);
             transform.position += transform.forward * speed * Time.deltaTime;
         } else
         {

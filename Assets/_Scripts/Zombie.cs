@@ -9,6 +9,7 @@ public class Zombie : MonoBehaviour
     public int hp;
     public GameObject player;
     Rigidbody rb;
+    public bool bomber;
     private void Start()
     {
             rb = GetComponent<Rigidbody>();
@@ -24,5 +25,5 @@ public class Zombie : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-   
+    
 }

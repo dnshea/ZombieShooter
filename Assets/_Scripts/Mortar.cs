@@ -13,6 +13,7 @@ public class Mortar : MonoBehaviour
     void Start()
     {
         InvokeRepeating("SpawnLaserBall", 1, spawnRate);
+
     }
     private void SpawnLaserBall()
     {
