@@ -120,4 +120,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   upTime: 3
-  player: {fileID: 3783130351546909029, guid: f1984f754d32ff340aeaff117749fd21, type: 3}
+  player: {fileID: 4403267032246420443, guid: c4d2b2acce36e59468f70bedfdbb022e, type: 3}

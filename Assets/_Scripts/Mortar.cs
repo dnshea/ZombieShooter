@@ -9,10 +9,13 @@ public class Mortar : MonoBehaviour
     public int hp;
     public GameObject player;
     public Transform mortarBase;
+    private GameObject spawner;
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("SpawnLaserBall", 1, spawnRate);
+        spawner = FindObjectOfType<Spawner>().gameObject;
+
     }
     private void SpawnLaserBall()
     {
@@ -23,6 +26,7 @@ public class Mortar : MonoBehaviour
         if (hp == 0)
         {
             player.GetComponent<PlayerController>().score += 100;
+            spawner.GetComponent<Spawner>().enemyCount--;
             Destroy(this.gameObject);
         }
     }
