@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4266922932309130004}
   - component: {fileID: -6955418012392090840}
   m_Layer: 0
-  m_Name: Laser Ball
+  m_Name: LaserBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -118,7 +118,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732a72400713f9f46a11d8354973927d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 0
   speed: 10
   upTime: 3
-  player: {fileID: 0}
+  player: {fileID: 3783130351546909029, guid: f1984f754d32ff340aeaff117749fd21, type: 3}

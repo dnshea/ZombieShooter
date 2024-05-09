@@ -11,9 +11,13 @@ public class Mortar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnLaser", 1, spawnRate);
+        InvokeRepeating("SpawnLaserBall", 1, spawnRate);
     }
-    private void Update()
+    private void SpawnLaserBall()
+    {
+        GameObject newLaser = Instantiate(laserballPrefab, transform.position, transform.rotation);
+    }
+        private void Update()
     {
         if (hp == 0)
         {
