@@ -94,17 +94,10 @@ public class PlayerController : MonoBehaviour
     {
         if(HP <= 0)
         {
-            SceneManager.LoadScene(1);
-        }
-    }
-
-    public void PauseMenu()
-    {
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
             SceneManager.LoadScene(2);
         }
     }
+
 
     private void OnTriggerEnter(Collider other)
     {
