@@ -54,10 +54,8 @@ public class Spawner : MonoBehaviour
     {
         if(waveNum == 1)
         {
-            SpawnEnemy(Zombie, spawnOne);
-            spawnDelay(3);
-
-            waveNum++;
+            
+            StartCoroutine(spawnDelay(3, Zombie, spawnOne, 3));
         }
         else if(waveNum == 2 && enemyCount == 0)
         {
@@ -105,9 +103,15 @@ public class Spawner : MonoBehaviour
     {
 
     }
-    private IEnumerator spawnDelay(float time)
+    private IEnumerator spawnDelay(float time, GameObject enemy, Transform spawnPoint, int numEnemies)
     {
-        yield return new WaitForSeconds(time);
+        for(int i = 0; i < numEnemies; i++)
+        {
+            SpawnEnemy(enemy, spawnPoint);
+            yield return new WaitForSeconds(time);
+        }
+        
+        waveNum++;
     }
 
 }
