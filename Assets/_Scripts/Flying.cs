@@ -7,9 +7,11 @@ public class Flying : MonoBehaviour
     public int speed;
     public int hp;
     private GameObject player;
+    private GameObject spawner;
     private void Start()
     {
         player = FindObjectOfType<PlayerController>().gameObject;
+        spawner = FindObjectOfType<Spawner>().gameObject;
     }
     void Update()
     {
@@ -18,6 +20,7 @@ public class Flying : MonoBehaviour
         if (hp <= 0)
         {
             player.GetComponent<PlayerController>().score += 75;
+            spawner.GetComponent<Spawner>().enemyCount--;
             Destroy(this.gameObject);
         }
     }
