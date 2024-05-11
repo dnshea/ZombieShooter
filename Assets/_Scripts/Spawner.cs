@@ -43,7 +43,7 @@ public class Spawner : MonoBehaviour
     //Count of Enemy that are alive
     public int enemyCount;
     //Wave Number
-    public int waveNum = 1;
+    private int waveNum = 1;
 
     private bool startWave; 
     // Start is called before the first frame update
@@ -85,7 +85,7 @@ public class Spawner : MonoBehaviour
             StartCoroutine(spawnHealth(5, Health, healthSpawn1, 2));
             waveNum++;
         }
-        else if(waveNum == 2 && enemyCount == 0)
+        else if(waveNum > 1 && enemyCount == 0)
         {
             startWave = false;
             StartCoroutine(waitWave());
@@ -119,14 +119,9 @@ public class Spawner : MonoBehaviour
             StartCoroutine(spawnHealth(7, Health, healthSpawn1, 4));
             waveNum++;
         }
-        else if (waveNum == 3 && enemyCount == 0)
+        else if (waveNum > 3 && enemyCount == 0)
         {
-            startWave = false;
-            StartCoroutine(waitWave());
-            if (startWave == true)
-            {
                 WaveThree();
-            }
         }
     }
     /// <summary>
@@ -154,12 +149,7 @@ public class Spawner : MonoBehaviour
         }
         else if (waveNum == 4 && enemyCount == 0)
         {
-            startWave = false;
-            StartCoroutine(waitWave());
-            if (startWave == true)
-            {
                 WaveFour();
-            }
         }
     }
     /// <summary>
@@ -187,12 +177,7 @@ public class Spawner : MonoBehaviour
         }
         else if (waveNum == 5 && enemyCount == 0)
         {
-            startWave = false;
-            StartCoroutine(waitWave());
-            if (startWave == true)
-            {
                 WaveFive();
-            }
         }
     }
     /// <summary>
