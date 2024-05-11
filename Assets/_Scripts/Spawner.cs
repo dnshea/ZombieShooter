@@ -55,8 +55,8 @@ public class Spawner : MonoBehaviour
         {
             
             StartCoroutine(spawnDelay(3, Zombie, spawnOne, 3));
-            StartCoroutine(spawnDelay(3, Zombie, spawnTwo, 6));
-            StartCoroutine(spawnDelay(3, Zombie, spawnThree, 9));
+            StartCoroutine(spawnDelay(4, Zombie, spawnTwo, 3));
+            StartCoroutine(spawnDelay(5, Zombie, spawnThree, 3));
         }
         else if(waveNum == 2 && enemyCount == 0)
         {
