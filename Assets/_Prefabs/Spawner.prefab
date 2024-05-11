@@ -859,7 +859,7 @@ MonoBehaviour:
   Flying: {fileID: 8528216634764420013, guid: de8d6db0e911e1c4392565e823c3c4f4, type: 3}
   Mortar: {fileID: 3505022986546942598, guid: 70fbec1e9a271234f9d4aaa5aa59937b, type: 3}
   Bomber: {fileID: 1134988362512899119, guid: 0b87d57237377f74ea2b132eabb12b13, type: 3}
-  Boss: {fileID: 6707427994947790247, guid: 672f66c4d4254e24a915ae9980f9711c, type: 3}
+  Boss: {fileID: 4666294400336745125, guid: 37c3bf0919f7e4b4db5bb1f57c3959be, type: 3}
   Health: {fileID: 5450327102087982880, guid: 49f576ce6ef1951499549cc22bf2230c, type: 3}
   spawnOne: {fileID: 6563732063724928760}
   spawnTwo: {fileID: 8761052190093672184}
@@ -886,6 +886,7 @@ MonoBehaviour:
   bossSpawn: {fileID: 8685046504288837379}
   healthSpawn3: {fileID: 1589785944684843618}
   enemyCount: 0
+  waveNum: 1
 --- !u!1 &9100494206776235265
 GameObject:
   m_ObjectHideFlags: 0

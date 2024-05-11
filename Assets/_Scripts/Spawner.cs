@@ -52,24 +52,24 @@ public class Spawner : MonoBehaviour
     {
         if(waveNum ==1)
         {
-
+            waveNum++;
             WaveOne();
         }
         if (waveNum == 2 && enemyCount == 0)
         {
-
+            WaveTwo();
         }
         if (waveNum == 3 && enemyCount == 0)
         {
-
+            WaveThree();
         }
         if (waveNum == 4 && enemyCount == 0)
         {
-
+            WaveFour();
         }
         if (waveNum == 5 && enemyCount == 0)
         {
-
+            WaveFive();
         }
     }
     /// <summary>
@@ -101,7 +101,6 @@ public class Spawner : MonoBehaviour
             StartCoroutine(spawn(6, Flying, spawnAir12, 2));
             //Health Spawn
             StartCoroutine(spawnHealth(5, Health, healthSpawn1, 2));
-            waveNum++;
 
     }
     /// <summary>
