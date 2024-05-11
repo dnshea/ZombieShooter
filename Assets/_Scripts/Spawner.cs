@@ -59,7 +59,7 @@ public class Spawner : MonoBehaviour
     /// <param name="spawnPoint"></param>where is spawns
     private void SpawnEnemy(GameObject enemy, Transform spawnPoint)
     {
-        Instantiate(enemy, transform.position, transform.rotation);
+        Instantiate(enemy, spawnPoint);
         enemyCount++;
     }
     /// <summary>
