@@ -97,10 +97,10 @@ public class PlayerController : MonoBehaviour
                     print("KILLED A LASER BALL");
 
                 }
-                if (hit.collider.gameObject.GetComponent<Mortar>())
+                if (hit.collider.gameObject.GetComponentInParent<Mortar>())
                 {
                     score += 12;
-                    hit.collider.gameObject.GetComponent<Mortar>().hp -= gunDamage;
+                    hit.collider.gameObject.GetComponentInParent<Mortar>().hp -= gunDamage;
                 }
 
             }
