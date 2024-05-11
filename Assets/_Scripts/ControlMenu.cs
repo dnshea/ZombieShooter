@@ -35,6 +35,9 @@ public class ControlMenu : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// pauses the game and shows a control menu
+    /// </summary>
     public void PauseGame()
     {
         controlMenu.SetActive(true);
@@ -42,6 +45,9 @@ public class ControlMenu : MonoBehaviour
         isPaused = true;
     }
 
+    /// <summary>
+    /// resumes the game after the pause
+    /// </summary>
     public void ResumeGame()
     {
         controlMenu.SetActive(false);
