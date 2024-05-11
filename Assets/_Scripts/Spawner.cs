@@ -44,6 +44,8 @@ public class Spawner : MonoBehaviour
     public int enemyCount;
     //Wave Number
     private int waveNum = 1;
+
+    public bool startWave; 
     // Start is called before the first frame update
     // Update is called once per frame
     void Update()
@@ -81,7 +83,12 @@ public class Spawner : MonoBehaviour
         }
         else if(waveNum == 2 && enemyCount == 0)
         {
-            WaveTwo();
+            startWave = false;
+            StartCoroutine(waitWave());
+            if (startWave == true)
+            {
+                WaveTwo();
+            }
         }
 
     }
@@ -110,7 +117,12 @@ public class Spawner : MonoBehaviour
         }
         else if (waveNum == 3 && enemyCount == 0)
         {
-            WaveThree();
+            startWave = false;
+            StartCoroutine(waitWave());
+            if (startWave == true)
+            {
+                WaveThree();
+            }
         }
     }
     /// <summary>
@@ -138,7 +150,12 @@ public class Spawner : MonoBehaviour
         }
         else if (waveNum == 4 && enemyCount == 0)
         {
-            WaveFour();
+            startWave = false;
+            StartCoroutine(waitWave());
+            if (startWave == true)
+            {
+                WaveFour();
+            }
         }
     }
     /// <summary>
@@ -166,7 +183,12 @@ public class Spawner : MonoBehaviour
         }
         else if (waveNum == 5 && enemyCount == 0)
         {
-            WaveFive();
+            startWave = false;
+            StartCoroutine(waitWave());
+            if (startWave == true)
+            {
+                WaveFive();
+            }
         }
     }
     /// <summary>
@@ -194,5 +216,9 @@ public class Spawner : MonoBehaviour
             SpawnEnemy(enemy, spawnPoint);
         }
     }
-
+    private IEnumerator waitWave()
+    {
+            yield return new WaitForSeconds(5);
+        startWave = true;
+    }
 }
