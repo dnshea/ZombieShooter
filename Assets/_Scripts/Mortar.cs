@@ -21,7 +21,7 @@ public class Mortar : MonoBehaviour
     {
         GameObject newLaser = Instantiate(laserballPrefab, mortarBase.transform.position, mortarBase.transform.rotation);
     }
-        private void Update()
+    private void Update()
     {
         if (hp == 0)
         {

@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
             RaycastHit hit;
 
             Debug.DrawRay(cam.transform.position, cam.transform.forward, Color.red);
-            if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 300f))
+            if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 30000f))
             {
                 if(hit.collider.gameObject.GetComponent<Zombie>())
                 {
