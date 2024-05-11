@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  hp: 100
+  hp: 45
   bomber: 0
 --- !u!54 &2425503884451490997
 Rigidbody:

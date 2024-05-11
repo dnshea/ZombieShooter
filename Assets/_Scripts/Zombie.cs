@@ -27,7 +27,8 @@ public class Zombie : MonoBehaviour
         {
             player.GetComponent<PlayerController>().score += 50;
             spawner.GetComponent<Spawner>().enemyCount--;
-            Destroy(this.gameObject);
+            print("Zombie is Dead");
+            Destroy(gameObject);
         }
     }
     

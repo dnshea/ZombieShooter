@@ -23,7 +23,7 @@ public class Mortar : MonoBehaviour
     }
     private void Update()
     {
-        if (hp == 0)
+        if (hp <= 0)
         {
             player.GetComponent<PlayerController>().score += 100;
             spawner.GetComponent<Spawner>().enemyCount--;
