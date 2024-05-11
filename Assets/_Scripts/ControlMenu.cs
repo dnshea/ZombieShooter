@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Nilo Miranda
+ * 5/10/24
+ * Makes an overlay of a controlmenu that can be accessed in game while puasing the game
+ */
+
 public class ControlMenu : MonoBehaviour
 {
     public GameObject controlMenu;

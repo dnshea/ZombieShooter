@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+ * Nilo Miranda
+ * 5/10/24
+ * Creates a health bar on the top right of the ui screen of the player that goes down when damage is taken
+ */
 
 public class HealthBar : MonoBehaviour
 {

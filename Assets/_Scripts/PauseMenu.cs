@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+ * Nilo Miranda
+ * 5/10/24
+ * Makes an overlay of a pause menu that will pause the game
+ */
+
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
@@ -30,6 +36,9 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// pauses the game
+    /// </summary>
     public void PauseGame()
     {
         pauseMenu.SetActive(true);
@@ -37,6 +46,9 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
     }
 
+    /// <summary>
+    /// resumes the game from the pause
+    /// </summary>
     public void ResumeGame()
     {
         pauseMenu.SetActive(false);
@@ -44,6 +56,9 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
     }
 
+    /// <summary>
+    /// Goes back to the menu while resetting the pause so the player wouldn't be frozen if played again
+    /// </summary>
     public void GoToMenu()
     {
         Time.timeScale = 1f;

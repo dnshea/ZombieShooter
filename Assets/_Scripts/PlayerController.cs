@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
     {
         if(HP <= 0)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(5);
         }
     }
 
