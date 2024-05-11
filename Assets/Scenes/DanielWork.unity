@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 132134439}
   - component: {fileID: 132134438}
   - component: {fileID: 132134437}
-  - component: {fileID: 132134440}
+  - component: {fileID: 132134441}
   m_Layer: 0
   m_Name: Eye (1)
   m_TagString: Untagged
@@ -229,7 +229,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 132134435}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &132134440
+--- !u!114 &132134441
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -238,14 +238,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 132134435}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 579df9ad6a31237468aaed5c6716a7fb, type: 3}
+  m_Script: {fileID: 11500000, guid: acb3da114e6a4ef42871b26a3df3ebc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   laserballPrefab: {fileID: 8068542775050688407, guid: 8bba0f349424158459fef65fc6aa199d, type: 3}
   spawnRate: 15
   hp: 5
   player: {fileID: 1287309181}
-  mortarBase: {fileID: 132134436}
+  eye: {fileID: 132134436}
+  boss: {fileID: 321405691}
 --- !u!1 &321405691
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,6 +256,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 321405692}
+  - component: {fileID: 321405693}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -284,6 +286,23 @@ Transform:
   - {fileID: 132134436}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -4.997, y: 0, z: 0}
+--- !u!114 &321405693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321405691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b7a5b213d8150498fc1f0f32956164, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  phase2: 0
+  eyes: 4
+  body: {fileID: 1213927826}
+  speed: 7
+  hp: 10
 --- !u!1 &380839267
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,7 +489,7 @@ GameObject:
   - component: {fileID: 599130290}
   - component: {fileID: 599130289}
   - component: {fileID: 599130288}
-  - component: {fileID: 599130291}
+  - component: {fileID: 599130292}
   m_Layer: 0
   m_Name: Eye (2)
   m_TagString: Untagged
@@ -564,7 +583,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599130286}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &599130291
+--- !u!114 &599130292
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -573,14 +592,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 599130286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 579df9ad6a31237468aaed5c6716a7fb, type: 3}
+  m_Script: {fileID: 11500000, guid: acb3da114e6a4ef42871b26a3df3ebc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   laserballPrefab: {fileID: 8068542775050688407, guid: 8bba0f349424158459fef65fc6aa199d, type: 3}
   spawnRate: 7
   hp: 5
   player: {fileID: 1287309181}
-  mortarBase: {fileID: 599130287}
+  eye: {fileID: 599130287}
+  boss: {fileID: 321405691}
 --- !u!1 &887464642
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,7 +1151,7 @@ GameObject:
   - component: {fileID: 1585128989}
   - component: {fileID: 1585128988}
   - component: {fileID: 1585128987}
-  - component: {fileID: 1585128990}
+  - component: {fileID: 1585128991}
   m_Layer: 0
   m_Name: Eye (3)
   m_TagString: Untagged
@@ -1225,7 +1245,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1585128985}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1585128990
+--- !u!114 &1585128991
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1234,14 +1254,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1585128985}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 579df9ad6a31237468aaed5c6716a7fb, type: 3}
+  m_Script: {fileID: 11500000, guid: acb3da114e6a4ef42871b26a3df3ebc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   laserballPrefab: {fileID: 8068542775050688407, guid: 8bba0f349424158459fef65fc6aa199d, type: 3}
   spawnRate: 15
   hp: 5
   player: {fileID: 1287309181}
-  mortarBase: {fileID: 1585128986}
+  eye: {fileID: 1585128986}
+  boss: {fileID: 321405691}
 --- !u!1 &1617143359
 GameObject:
   m_ObjectHideFlags: 0
@@ -1613,14 +1634,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1926799801}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 579df9ad6a31237468aaed5c6716a7fb, type: 3}
+  m_Script: {fileID: 11500000, guid: acb3da114e6a4ef42871b26a3df3ebc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   laserballPrefab: {fileID: 8068542775050688407, guid: 8bba0f349424158459fef65fc6aa199d, type: 3}
   spawnRate: 7
   hp: 5
   player: {fileID: 1287309181}
-  mortarBase: {fileID: 1926799802}
+  eye: {fileID: 1926799802}
+  boss: {fileID: 321405691}
 --- !u!1 &1933802377
 GameObject:
   m_ObjectHideFlags: 0
