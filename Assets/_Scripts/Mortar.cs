@@ -14,7 +14,7 @@ public class Mortar : MonoBehaviour
     void Start()
     {
         InvokeRepeating("SpawnLaserBall", 1, spawnRate);
-        spawner = FindObjectOfType<Spawner>().gameObject;
+        //spawner = FindObjectOfType<Spawner>().gameObject;
 
     }
     private void SpawnLaserBall()

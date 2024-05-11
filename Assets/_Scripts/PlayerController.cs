@@ -80,11 +80,11 @@ public class PlayerController : MonoBehaviour
                     hit.collider.gameObject.GetComponent<Zombie>().hp -= gunDamage;
                     score += 10;
                 }
-                if (hit.collider.gameObject.GetComponent<Zombie>().bomber)
+/*                if (hit.collider.gameObject.GetComponent<Zombie>().bomber)
                 {
                     hit.collider.gameObject.GetComponent<Zombie>().hp -= gunDamage;
                     score += 12;
-                }
+                }*/
                 if (hit.collider.gameObject.GetComponent<Flying>())
                 {
                     hit.collider.gameObject.GetComponent<Flying>().hp -= gunDamage;
@@ -94,6 +94,8 @@ public class PlayerController : MonoBehaviour
                 {
                     score += 5;
                     Destroy(hit.collider.gameObject);
+                    print("KILLED A LASER BALL");
+
                 }
                 if (hit.collider.gameObject.GetComponent<Mortar>())
                 {
@@ -140,11 +142,11 @@ public class PlayerController : MonoBehaviour
             HP -= 25;
             Destroy(collision.gameObject);
         }
-        if(collision.gameObject.GetComponent<Zombie>().bomber)
+/*        if(collision.gameObject.GetComponent<Zombie>().bomber)
         {
             HP -= 35;
             Destroy(collision.gameObject);
-        }
+        }*/
     }
 
     private bool OnGround()
