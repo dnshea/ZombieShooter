@@ -45,7 +45,7 @@ public class Spawner : MonoBehaviour
     //Wave Number
     private int waveNum = 1;
 
-    public bool startWave; 
+    private bool startWave; 
     // Start is called before the first frame update
     // Update is called once per frame
     void Update()
