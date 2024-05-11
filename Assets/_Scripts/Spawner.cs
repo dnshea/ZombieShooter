@@ -43,14 +43,34 @@ public class Spawner : MonoBehaviour
     //Count of Enemy that are alive
     public int enemyCount;
     //Wave Number
-    private int waveNum = 1;
+    public int waveNum = 1;
 
     private bool startWave; 
     // Start is called before the first frame update
     // Update is called once per frame
     void Update()
     {
-        WaveOne();
+        if(waveNum ==1)
+        {
+
+            WaveOne();
+        }
+        if (waveNum == 2 && enemyCount == 0)
+        {
+
+        }
+        if (waveNum == 3 && enemyCount == 0)
+        {
+
+        }
+        if (waveNum == 4 && enemyCount == 0)
+        {
+
+        }
+        if (waveNum == 5 && enemyCount == 0)
+        {
+
+        }
     }
     /// <summary>
     /// Script to spawn enemy used on coroutine
@@ -71,8 +91,6 @@ public class Spawner : MonoBehaviour
     /// </summary>
     private void WaveOne()
     {
-        if(waveNum == 1)
-        {
             //Ground Spawn
             StartCoroutine(spawn(3, Zombie, spawnOne, 3));
             StartCoroutine(spawn(4, Zombie, spawnTwo, 1));
@@ -84,16 +102,6 @@ public class Spawner : MonoBehaviour
             //Health Spawn
             StartCoroutine(spawnHealth(5, Health, healthSpawn1, 2));
             waveNum++;
-        }
-        else if(waveNum > 1 && enemyCount == 0)
-        {
-            startWave = false;
-            StartCoroutine(waitWave());
-            if (startWave == true)
-            {
-                WaveTwo();
-            }
-        }
 
     }
     /// <summary>
@@ -101,8 +109,7 @@ public class Spawner : MonoBehaviour
     /// </summary>
     private void WaveTwo()
     {
-        if (waveNum == 2)
-        {
+        
             //Ground Spawn
             StartCoroutine(spawn(3, Zombie, spawnOne, 5));
             StartCoroutine(spawn(4, Zombie, spawnTwo, 3));
@@ -117,20 +124,12 @@ public class Spawner : MonoBehaviour
             StartCoroutine(spawn(20, Flying, spawnAir15, 1));
             //Health Spawn
             StartCoroutine(spawnHealth(7, Health, healthSpawn1, 4));
-            waveNum++;
-        }
-        else if (waveNum > 3 && enemyCount == 0)
-        {
-                WaveThree();
-        }
     }
     /// <summary>
     /// Wave Three
     /// </summary>
     private void WaveThree()
     {
-        if (waveNum == 3)
-        {
             //Ground Spawn
             StartCoroutine(spawn(3, Zombie, spawnOne2, 6));
             StartCoroutine(spawn(4, Bomber, spawnTwo2, 2));
@@ -146,19 +145,12 @@ public class Spawner : MonoBehaviour
             //Health Spawn
             StartCoroutine(spawnHealth(7, Health, healthSpawn2, 4));
             waveNum++;
-        }
-        else if (waveNum == 4 && enemyCount == 0)
-        {
-                WaveFour();
-        }
     }
     /// <summary>
     /// Wave Four
     /// </summary>
     private void WaveFour()
     {
-        if (waveNum == 1)
-        {
             //Ground Spawn
             StartCoroutine(spawn(3, Zombie, spawnOne2, 8));
             StartCoroutine(spawn(4, Bomber, spawnTwo2, 4));
@@ -174,11 +166,6 @@ public class Spawner : MonoBehaviour
             //Health Spawn
             StartCoroutine(spawnHealth(7, Health, healthSpawn2, 5));
             waveNum++;
-        }
-        else if (waveNum == 5 && enemyCount == 0)
-        {
-                WaveFive();
-        }
     }
     /// <summary>
     /// Boss Wave
@@ -216,6 +203,6 @@ public class Spawner : MonoBehaviour
     private IEnumerator waitWave()
     {
             yield return new WaitForSeconds(5);
-        startWave = true;
+            startWave = true;
     }
 }
