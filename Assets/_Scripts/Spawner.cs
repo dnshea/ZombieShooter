@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public bool levelOne;
     public GameObject Zombie;
     public GameObject Flying;
     public GameObject Range;
@@ -56,6 +55,8 @@ public class Spawner : MonoBehaviour
         {
             
             StartCoroutine(spawnDelay(3, Zombie, spawnOne, 3));
+            StartCoroutine(spawnDelay(3, Zombie, spawnTwo, 6));
+            StartCoroutine(spawnDelay(3, Zombie, spawnThree, 9));
         }
         else if(waveNum == 2 && enemyCount == 0)
         {
