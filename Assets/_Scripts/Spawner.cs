@@ -39,6 +39,7 @@ public class Spawner : MonoBehaviour
     public Transform healthSpawn2;
     //Boss Spawning
     public Transform bossSpawn;
+    public Transform healthSpawn3;
     //Count of Enemy that are alive
     public int enemyCount;
     //Wave Number
@@ -175,7 +176,7 @@ public class Spawner : MonoBehaviour
     {
         //Boss and Health spawn in Boss arena
         SpawnEnemy(Boss, bossSpawn);
-        StartCoroutine(spawnEnemies(10, Health, healthSpawn3, 2));
+        StartCoroutine(spawn(10, Health, healthSpawn3, 2));
     }
     /// <summary>
     /// Coroutine to Spawn Enemies
