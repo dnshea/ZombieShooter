@@ -1526,7 +1526,7 @@ PrefabInstance:
       objectReference: {fileID: 1287309181}
     - target: {fileID: 958244612633671268, guid: 2b03ace2c8d2dd442a810c6c56be4ccb, type: 3}
       propertyPath: spawnRate
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 958244612633671268, guid: 2b03ace2c8d2dd442a810c6c56be4ccb, type: 3}
       propertyPath: isUltimate

@@ -6,6 +6,7 @@ public class UltimateProjectile : MonoBehaviour
 {
     public float speed;
     public float upTime = 2f;
+    public int damage;
 
     private bool follow = false;
     private Transform player;
@@ -29,7 +30,7 @@ public class UltimateProjectile : MonoBehaviour
         }
         else if(reflected)
         {
-            transform.LookAt(boss.GetComponent<Boss>().body.transform.position);
+            transform.LookAt(boss.position);
             transform.position += transform.forward * speed * Time.deltaTime;
         }
         else
@@ -46,11 +47,20 @@ public class UltimateProjectile : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        print("COLLIDING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         if(collision.gameObject.tag == "Cover")
         {
             reflected = true;
             Destroy(collision.gameObject);
+        }
+        if(collision.gameObject.GetComponent<Boss>())
+        {
+            collision.gameObject.GetComponent<Boss>().hp -= damage;
+            Destroy(gameObject);
+        }
+        else if (collision.gameObject.GetComponentInParent<Boss>())
+        {
+            collision.gameObject.GetComponentInParent<Boss>().hp -= damage;
+            Destroy(gameObject);
         }
     }
 
