@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+ * Nilo Miranda
+ * 5/10/24
+ * Ends the scene and also switches scene
+ */
+
 public class EndScene : MonoBehaviour
 {
     public void QuitGame()

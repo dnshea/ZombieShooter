@@ -14,14 +14,12 @@ public class UIManager : MonoBehaviour
 {
 
     public PlayerController PlayerController;
-    public TMP_Text Lives;
    public TMP_Text Score;
 
 
     // Update is called once per frame
     void Update()
     {
-        Lives.text = "HP: " + PlayerController.HP;
         Score.text = "Score: " + PlayerController.score;
     }
 }
