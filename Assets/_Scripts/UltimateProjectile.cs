@@ -57,7 +57,7 @@ public class UltimateProjectile : MonoBehaviour
             collision.gameObject.GetComponent<Boss>().hp -= damage;
             Destroy(gameObject);
         }
-        else if (collision.gameObject.GetComponentInParent<Boss>())
+        else if (collision.gameObject.GetComponentInParent<Boss>() && collision.gameObject.tag != "Eye")
         {
             collision.gameObject.GetComponentInParent<Boss>().hp -= damage;
             Destroy(gameObject);
