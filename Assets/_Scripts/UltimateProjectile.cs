@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LaserBall : MonoBehaviour
+public class UltimateProjectile : MonoBehaviour
 {
-    public int speed = 10;
+    public float speed;
     public float upTime = 3f;
     private bool follow = false;
     private Transform player;
@@ -22,17 +22,17 @@ public class LaserBall : MonoBehaviour
         {
             transform.LookAt(player.transform.position);
             transform.position += transform.forward * speed * Time.deltaTime;
-        } 
+        }
         else
         {
             transform.Translate(Vector3.up * speed * Time.deltaTime);
         }
-        
+
     }
     private IEnumerator Uptime(float time)
     {
         yield return new WaitForSeconds(time);
         follow = true;
     }
-    
+
 }

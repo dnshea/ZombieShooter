@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58ee0252357f52544a0f7cbac3219e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 8
   hp: 100
   bomber: 1
 --- !u!54 &8281916966493080095

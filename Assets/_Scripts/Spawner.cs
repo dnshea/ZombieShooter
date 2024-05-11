@@ -43,7 +43,9 @@ public class Spawner : MonoBehaviour
     //Count of Enemy that are alive
     public int enemyCount;
     //Wave Number
-    private int waveNum = 1;
+    public int waveNum = 1;
+
+    private bool startWave; 
     // Start is called before the first frame update
     // Update is called once per frame
     void Update()
@@ -57,8 +59,12 @@ public class Spawner : MonoBehaviour
     /// <param name="spawnPoint"></param>where is spawns
     private void SpawnEnemy(GameObject enemy, Transform spawnPoint)
     {
-        Instantiate(enemy, transform.position, transform.rotation);
+        Instantiate(enemy, spawnPoint.transform);
         enemyCount++;
+    }
+    private void health(GameObject health, Transform spawnPoint)
+    {
+        Instantiate(health, spawnPoint.transform);
     }
     /// <summary>
     /// Wave One
@@ -76,12 +82,17 @@ public class Spawner : MonoBehaviour
             StartCoroutine(spawn(6, Flying, spawnAir11, 2));
             StartCoroutine(spawn(6, Flying, spawnAir12, 2));
             //Health Spawn
-            StartCoroutine(spawn(5, Health, healthSpawn1, 2));
+            StartCoroutine(spawnHealth(5, Health, healthSpawn1, 2));
             waveNum++;
         }
         else if(waveNum == 2 && enemyCount == 0)
         {
-            WaveTwo();
+            startWave = false;
+            StartCoroutine(waitWave());
+            if (startWave == true)
+            {
+                WaveTwo();
+            }
         }
 
     }
@@ -105,12 +116,17 @@ public class Spawner : MonoBehaviour
             StartCoroutine(spawn(20, Flying, spawnAir14, 1));
             StartCoroutine(spawn(20, Flying, spawnAir15, 1));
             //Health Spawn
-            StartCoroutine(spawn(7, Health, healthSpawn1, 4));
+            StartCoroutine(spawnHealth(7, Health, healthSpawn1, 4));
             waveNum++;
         }
         else if (waveNum == 3 && enemyCount == 0)
         {
-            WaveThree();
+            startWave = false;
+            StartCoroutine(waitWave());
+            if (startWave == true)
+            {
+                WaveThree();
+            }
         }
     }
     /// <summary>
@@ -133,12 +149,17 @@ public class Spawner : MonoBehaviour
             StartCoroutine(spawn(15, Flying, spawnAir24, 2));
             StartCoroutine(spawn(20, Flying, spawnAir25, 1));
             //Health Spawn
-            StartCoroutine(spawn(7, Health, healthSpawn2, 4));
+            StartCoroutine(spawnHealth(7, Health, healthSpawn2, 4));
             waveNum++;
         }
         else if (waveNum == 4 && enemyCount == 0)
         {
-            WaveFour();
+            startWave = false;
+            StartCoroutine(waitWave());
+            if (startWave == true)
+            {
+                WaveFour();
+            }
         }
     }
     /// <summary>
@@ -161,12 +182,17 @@ public class Spawner : MonoBehaviour
             StartCoroutine(spawn(10, Flying, spawnAir24, 4));
             StartCoroutine(spawn(10, Flying, spawnAir25, 4));
             //Health Spawn
-            StartCoroutine(spawn(7, Health, healthSpawn2, 5));
+            StartCoroutine(spawnHealth(7, Health, healthSpawn2, 5));
             waveNum++;
         }
         else if (waveNum == 5 && enemyCount == 0)
         {
-            WaveFive();
+            startWave = false;
+            StartCoroutine(waitWave());
+            if (startWave == true)
+            {
+                WaveFive();
+            }
         }
     }
     /// <summary>
@@ -176,7 +202,7 @@ public class Spawner : MonoBehaviour
     {
         //Boss and Health spawn in Boss arena
         SpawnEnemy(Boss, bossSpawn);
-        StartCoroutine(spawn(10, Health, healthSpawn3, 2));
+        StartCoroutine(spawnHealth(10, Health, healthSpawn3, 2));
     }
     /// <summary>
     /// Coroutine to Spawn Enemies
@@ -191,8 +217,20 @@ public class Spawner : MonoBehaviour
         for(int i = 0; i < numEnemies; i++)
         {
             yield return new WaitForSeconds(time);
-            SpawnEnemy(enemy, spawnPoint);
+            SpawnEnemy(enemy, spawnPoint.transform);
         }
     }
-
+    private IEnumerator spawnHealth(float time, GameObject heal, Transform spawnPoint, int numEnemies)
+    {
+        for (int i = 0; i < numEnemies; i++)
+        {
+            yield return new WaitForSeconds(time);
+            health(heal, spawnPoint.transform);
+        }
+    }
+    private IEnumerator waitWave()
+    {
+            yield return new WaitForSeconds(5);
+        startWave = true;
+    }
 }
