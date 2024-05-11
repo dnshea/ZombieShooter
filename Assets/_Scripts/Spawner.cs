@@ -43,7 +43,7 @@ public class Spawner : MonoBehaviour
     //Count of Enemy that are alive
     public int enemyCount;
     //Wave Number
-    private int waveNum = 1;
+    public int waveNum = 1;
 
     private bool startWave; 
     // Start is called before the first frame update
