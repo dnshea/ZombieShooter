@@ -7,10 +7,11 @@ public class Spawner : MonoBehaviour
 {
     public GameObject Zombie;
     public GameObject Flying;
-    public GameObject Range;
+    public GameObject Mortar;
     public GameObject Bomber;
     public GameObject Boss;
     public GameObject Health;
+
     //Level One Spawn Points
     public Transform spawnOne;
     public Transform spawnTwo;
@@ -22,6 +23,7 @@ public class Spawner : MonoBehaviour
     public Transform spawnAir13;
     public Transform spawnAir14;
     public Transform spawnAir15;
+    public Transform healthSpawn1;
     //Level Two Spawn Points
     public Transform spawnOne2;
     public Transform spawnTwo2;
@@ -33,6 +35,9 @@ public class Spawner : MonoBehaviour
     public Transform spawnAir23;
     public Transform spawnAir24;
     public Transform spawnAir25;
+    public Transform healthSpawn2;
+
+    public Transform bossSpawn;
 
     public int enemyCount;
 
@@ -53,10 +58,14 @@ public class Spawner : MonoBehaviour
     {
         if(waveNum == 1)
         {
-            
-            StartCoroutine(spawnDelay(3, Zombie, spawnOne, 3));
-            StartCoroutine(spawnDelay(4, Zombie, spawnTwo, 3));
-            StartCoroutine(spawnDelay(5, Zombie, spawnThree, 3));
+            StartCoroutine(spawnEnemies(3, Zombie, spawnOne, 3));
+            StartCoroutine(spawnEnemies(4, Zombie, spawnTwo, 1));
+            StartCoroutine(spawnEnemies(5, Zombie, spawnThree, 1));
+            StartCoroutine(spawnEnemies(7, Mortar, spawnFour, 1));
+            StartCoroutine(spawnEnemies(6, Flying, spawnAir11, 2));
+            StartCoroutine(spawnEnemies(6, Flying, spawnAir12, 2));
+            StartCoroutine(spawnEnemies(5, Health, healthSpawn1, 2));
+            waveNum++;
         }
         else if(waveNum == 2 && enemyCount == 0)
         {
@@ -68,7 +77,17 @@ public class Spawner : MonoBehaviour
     {
         if (waveNum == 2)
         {
-            SpawnEnemy(Zombie, spawnOne);
+            StartCoroutine(spawnEnemies(3, Zombie, spawnOne, 5));
+            StartCoroutine(spawnEnemies(4, Zombie, spawnTwo, 3));
+            StartCoroutine(spawnEnemies(5, Zombie, spawnThree, 3));
+            StartCoroutine(spawnEnemies(10, Mortar, spawnFour, 2));
+            StartCoroutine(spawnEnemies(6, Flying, spawnAir11, 3));
+            StartCoroutine(spawnEnemies(6, Flying, spawnAir12, 3));
+            StartCoroutine(spawnEnemies(10, Mortar, spawnFive, 3));
+            StartCoroutine(spawnEnemies(20, Flying, spawnAir13, 1));
+            StartCoroutine(spawnEnemies(20, Flying, spawnAir14, 1));
+            StartCoroutine(spawnEnemies(20, Flying, spawnAir15, 1));
+            StartCoroutine(spawnEnemies(7, Health, healthSpawn1, 4));
             waveNum++;
         }
         else if (waveNum == 3 && enemyCount == 0)
@@ -80,7 +99,17 @@ public class Spawner : MonoBehaviour
     {
         if (waveNum == 3)
         {
-            SpawnEnemy(Zombie, spawnOne);
+            StartCoroutine(spawnEnemies(3, Zombie, spawnOne2, 6));
+            StartCoroutine(spawnEnemies(4, Bomber, spawnTwo2, 2));
+            StartCoroutine(spawnEnemies(4, Bomber, spawnThree2, 3));
+            StartCoroutine(spawnEnemies(10, Mortar, spawnFour2, 3));
+            StartCoroutine(spawnEnemies(5, Flying, spawnAir21, 2));
+            StartCoroutine(spawnEnemies(6, Flying, spawnAir22, 3));
+            StartCoroutine(spawnEnemies(10, Bomber, spawnFive2, 2));
+            StartCoroutine(spawnEnemies(15, Flying, spawnAir23, 2));
+            StartCoroutine(spawnEnemies(15, Flying, spawnAir24, 2));
+            StartCoroutine(spawnEnemies(20, Flying, spawnAir25, 1));
+            StartCoroutine(spawnEnemies(7, Health, healthSpawn1, 4));
             waveNum++;
         }
         else if (waveNum == 4 && enemyCount == 0)
@@ -92,7 +121,17 @@ public class Spawner : MonoBehaviour
     {
         if (waveNum == 1)
         {
-            SpawnEnemy(Zombie, spawnOne);
+            StartCoroutine(spawnEnemies(3, Zombie, spawnOne2, 8));
+            StartCoroutine(spawnEnemies(4, Bomber, spawnTwo2, 4));
+            StartCoroutine(spawnEnemies(4, Bomber, spawnThree2, 4));
+            StartCoroutine(spawnEnemies(10, Mortar, spawnFour2, 4));
+            StartCoroutine(spawnEnemies(5, Flying, spawnAir21, 5));
+            StartCoroutine(spawnEnemies(6, Flying, spawnAir22, 3));
+            StartCoroutine(spawnEnemies(10, Bomber, spawnFive2, 4));
+            StartCoroutine(spawnEnemies(15, Flying, spawnAir23, 2));
+            StartCoroutine(spawnEnemies(10, Flying, spawnAir24, 4));
+            StartCoroutine(spawnEnemies(10, Flying, spawnAir25, 4));
+            StartCoroutine(spawnEnemies(7, Health, healthSpawn1, 5));
             waveNum++;
         }
         else if (waveNum == 5 && enemyCount == 0)
@@ -102,17 +141,16 @@ public class Spawner : MonoBehaviour
     }
     private void WaveFive()
     {
-
+        SpawnEnemy(Boss, bossSpawn);
+        StartCoroutine(spawnEnemies(10, Health, healthSpawn1, 2));
     }
-    private IEnumerator spawnDelay(float time, GameObject enemy, Transform spawnPoint, int numEnemies)
+    private IEnumerator spawnEnemies(float time, GameObject enemy, Transform spawnPoint, int numEnemies)
     {
         for(int i = 0; i < numEnemies; i++)
         {
-            SpawnEnemy(enemy, spawnPoint);
             yield return new WaitForSeconds(time);
+            SpawnEnemy(enemy, spawnPoint);
         }
-        
-        waveNum++;
     }
 
 }
