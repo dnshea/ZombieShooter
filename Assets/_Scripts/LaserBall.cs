@@ -22,7 +22,8 @@ public class LaserBall : MonoBehaviour
         {
             transform.LookAt(player.transform.position);
             transform.position += transform.forward * speed * Time.deltaTime;
-        } else
+        } 
+        else
         {
             transform.Translate(Vector3.up * speed * Time.deltaTime);
         }

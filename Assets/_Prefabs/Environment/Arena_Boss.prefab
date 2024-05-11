@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7184470129182403215}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1008.38257, y: 1.4400005, z: 0}
   m_LocalScale: {x: 125, y: 1, z: 125}
   m_ConstrainProportionsScale: 0
@@ -193,6 +193,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.03117528
@@ -337,6 +341,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175287
@@ -477,6 +485,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175284
@@ -616,6 +628,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -827,6 +843,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175284
@@ -896,6 +916,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -967,6 +991,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175284
@@ -1036,6 +1064,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -1107,6 +1139,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175284
@@ -1176,6 +1212,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -1247,6 +1287,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175284
@@ -1316,6 +1360,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -1387,6 +1435,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175286
@@ -1456,6 +1508,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -1597,6 +1653,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175284
@@ -1666,6 +1726,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -1737,6 +1801,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175284
@@ -1806,6 +1874,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -1929,6 +2001,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BuildingBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 4482792687468487504, guid: aad2e1fa60fc66040b4dc10a5fc67706, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2003,6 +2079,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BuildingBlock (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4482792687468487504, guid: aad2e1fa60fc66040b4dc10a5fc67706, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2024,6 +2104,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -2172,6 +2256,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -2387,6 +2475,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175284
@@ -2456,6 +2548,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -2527,6 +2623,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175284
@@ -2597,6 +2697,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175284
@@ -2666,6 +2770,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -2893,6 +3001,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175274
@@ -2962,6 +3074,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -3085,6 +3201,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BuildingBlock (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4482792687468487504, guid: aad2e1fa60fc66040b4dc10a5fc67706, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3106,6 +3226,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -3177,6 +3301,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175286
@@ -3247,6 +3375,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175287
@@ -3316,6 +3448,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -3439,6 +3575,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BuildingBlock (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4482792687468487504, guid: aad2e1fa60fc66040b4dc10a5fc67706, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3460,6 +3600,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -3609,6 +3753,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175284
@@ -3679,9 +3827,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175287
+      objectReference: {fileID: 0}
+    - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2671682
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.z
@@ -3748,6 +3904,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -3871,6 +4031,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BuildingBlock (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4482792687468487504, guid: aad2e1fa60fc66040b4dc10a5fc67706, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3971,6 +4135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.03117528
@@ -4040,6 +4208,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -4111,6 +4283,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175284
@@ -4180,6 +4356,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -4321,6 +4501,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175287
@@ -4390,6 +4574,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -4461,6 +4649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175282
@@ -4530,6 +4722,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -4601,6 +4797,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175287
@@ -4671,9 +4871,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175284
+      objectReference: {fileID: 0}
+    - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2671682
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.z
@@ -4819,6 +5027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175287
@@ -4958,6 +5170,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -5107,6 +5323,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175286
@@ -5229,6 +5449,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BuildingBlock (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4482792687468487504, guid: aad2e1fa60fc66040b4dc10a5fc67706, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5250,6 +5474,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -5321,6 +5549,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175286
@@ -5390,6 +5622,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
@@ -5461,6 +5697,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blockade (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
+      objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.031175284
@@ -5530,6 +5770,10 @@ PrefabInstance:
     - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_Name
       value: Blockade (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101675625315078623, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
+      propertyPath: m_TagString
+      value: Cover
       objectReference: {fileID: 0}
     - target: {fileID: 8462913871096885673, guid: e42a4a8e94d0d164285480b9e32f4fd0, type: 3}
       propertyPath: m_LocalScale.x
