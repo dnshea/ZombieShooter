@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Zombie
+  - Item
+  - Floor
+  - Wall
+  - Cover
   layers:
   - Default
   - TransparentFX
