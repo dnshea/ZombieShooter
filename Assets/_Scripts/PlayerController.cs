@@ -147,11 +147,16 @@ public class PlayerController : MonoBehaviour
             HP -= 25;
             Destroy(collision.gameObject);
         }
-/*        if(collision.gameObject.GetComponent<Zombie>().bomber)
+        if (collision.gameObject.GetComponentInParent<UltimateProjectile>())
         {
-            HP -= 35;
-            Destroy(collision.gameObject);
-        }*/
+            HP = 0;
+            //Destroy(collision.gameObject);
+        }
+        /*        if(collision.gameObject.GetComponent<Zombie>().bomber)
+                {
+                    HP -= 35;
+                    Destroy(collision.gameObject);
+                }*/
     }
 
     private bool OnGround()

@@ -5,20 +5,28 @@ using UnityEngine;
 public class EyeShooter : MonoBehaviour
 {
     public GameObject laserballPrefab;
+    public GameObject ultimateProjectilePrefab;
     public float spawnRate;
     public int hp;
     public GameObject player;
     public Transform eye;
     public GameObject boss;
+    public bool isUltimate;
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnLaserBall", 1, spawnRate);
-
+        InvokeRepeating("SpawnLaserBall", 3, spawnRate);
     }
     private void SpawnLaserBall()
     {
-        GameObject newLaser = Instantiate(laserballPrefab, eye.transform.position, eye.transform.rotation);
+        if(!isUltimate)
+        {
+            GameObject newLaser = Instantiate(laserballPrefab, eye.transform.position, eye.transform.rotation);
+        }
+        else if (gameObject.activeSelf)
+        {
+            GameObject newLaser = Instantiate(ultimateProjectilePrefab, eye.transform.position, eye.transform.rotation);
+        }
     }
     private void Update()
     {

@@ -7,6 +7,7 @@ public class Boss : MonoBehaviour
     public bool phase2 = false;
     public int eyes = 4;
     public Transform body;
+    public GameObject ultimateEye;
     public float speed;
     public int hp;
 
@@ -17,6 +18,7 @@ public class Boss : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<PlayerController>().gameObject;
+        ultimateEye.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -34,6 +36,7 @@ public class Boss : MonoBehaviour
         if(notRotated)
         {
             body.transform.Rotate(90, body.rotation.y, body.rotation.z);
+            ultimateEye.gameObject.SetActive(true);
             notRotated = false;
         }
         
