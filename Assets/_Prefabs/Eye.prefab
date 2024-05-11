@@ -119,8 +119,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laserballPrefab: {fileID: 8068542775050688407, guid: 8bba0f349424158459fef65fc6aa199d, type: 3}
+  ultimateProjectilePrefab: {fileID: 0}
   spawnRate: 7
   hp: 5
   player: {fileID: 0}
   eye: {fileID: 1081765168475159657}
   boss: {fileID: 0}
+  isUltimate: 0
